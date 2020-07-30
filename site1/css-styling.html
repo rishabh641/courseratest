@@ -1,35 +1,297 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Anatomy of a CSS rule</title>
-<style>
-    xxx{
-		background-color: green;
-	}
-    section>article{
-		font-weight: bold;
-		font-style: italic;
-	}
-	section article{
-		color: red;
-		background-color: black;
-	}
-</style></head>
+	<title>10 Best Movies</title>
+	<link rel = "icon" href =  
+"logoR.jpg" 
+        type = "image/x-icon"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+		*{
+			margin: 0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		h2{
+			text-align: center;
+			margin-bottom: 5px;
+			font-size: 30px;
+		}
+		body{
+			background-color: lightgrey;
+		}
+		div
+		{
+			background-color: white; 
+			margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            box-shadow: 3px 2px 2px blue;
+            margin:1px;
+		}
+		p
+		{
+			background-color: white;
+			width: 90%;
+            font-family: Helvetica, sans-serif;
+            color: black;
+            font-size: 19px;
+            font-style: italic;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 2px grey;
+		}
+		.header{
+			background-color: grey;
+			height: auto;
+		}
+		img{
+			margin: 0;
+			padding: 0;
+
+		}
+		@media (min-width: 1200px){
+			.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
+				float: left;
+				border:1px solid black;
+			}
+				.col-lg-1{
+					width:8.33%;
+					height: 750px;
+				}
+				.col-lg-2{
+					width:16.66;
+					height: 750px;
+				}
+				.col-lg-3{
+					width:25%;
+					height: 750px;
+				}
+				.col-lg-4{
+					width:33.33%;
+					height: 750px;
+				}
+				.col-lg-5{
+					width:41.66%;
+					height: 750px;
+				}
+				.col-lg-6{
+					width:48%;
+					height: 750px;
+				}
+				.col-lg-7{
+					width:58.33%;
+					height: 750px;
+				}
+				.col-lg-8{
+					width:66.66%;
+					height: 750px;
+				}
+				.col-lg-9
+				{
+					width:75%;
+					height: 750px;
+				}
+				.col-lg-10
+				{
+					width:83.33%;
+					height: 750px;
+				}
+				.col-lg-11
+				{
+					width:91.66%;
+					height: 750px;
+				}
+				.col-lg-12
+				{
+					width:98%;
+					height: 750px;
+				}
+			} 
+@media (min-width: 951px)and(max-width: 1199px){
+			.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+				float: left;
+				border:1px solid green;
+			}
+			  
+				.col-md-1{
+					width:8.33%;
+					height: auto;
+				}
+				.col-md-2{
+					width:16.66;
+					height: auto;
+				}
+				.col-md-3{
+					width:25%;
+					height: auto;
+				}
+				.col-md-4{
+					width:33.33%;
+					height: auto;
+				}
+				.col-md-5{
+					width:41.66%;
+					height: auto;
+				}
+				.col-md-6{
+					width:48%;
+					height: auto;
+				}
+				.col-md-7{
+					width:58.33%;
+					height: auto;
+				}
+				.col-md-8{
+					width:66.66%;
+					height: auto;
+				}
+				.col-md-9
+				{
+					width:75%;
+					height: auto;
+				}
+				.col-md-10
+				{
+					width:83.33%;
+					height: auto;
+				}
+				.col-md-11
+				{
+					width:91.66%;
+					height: auto;
+				}
+				.col-md-12
+				{
+					width:100%;
+					height: auto;
+				}
+			} 
+			img{
+				display: block;
+				width: 100%;
+				height: 60%;
+			}
+			.logo{
+				width: 60px;
+				height: 60px;
+			}
+			.ending{
+				background-color: grey;
+			}
+			.firstline{
+				background-color: lightgrey;
+			}
+	</style>
+</head>
 <body>
-<h1 class="highlight">Anatomy of CSS rule</h1>
-<h2> Subheading</h2>
-<section>
-	<article>
-	Knowing how to write a paragraph is incredibly important. It’s a basic aspect of writing, and it is something that everyone should know how to do. There is a specific structure that you have to follow when you’re writing a paragraph.
-</article>
-</section>
-	<section>
-	 <div>
-	 	<article>This structure helps make it easier for the reader to understand what is going on. Through writing good paragraphs, a person can communicate a lot better through their writing.
-</article>
+	<div class="header">
+		<img class=logo src="logoR.jpg" width="60px"
+		height="60px">
+	</div>
+	<p class="firstline">
+		The following movies are worth to watch. 
+	</p>
+	<div class="col-lg-6 col-md-12">
+		<h2>Avatar</h2>
+		<img src="avatar.jpg" >
+		<p > 
+		Avatar is one of the most visually beautiful movies ever made. Even people who complain about special effects in movies dropped their jaws upon seeing it for the first time. This film pushed modern cinematic technology into a new age, ushering in the age of stereoscopic 3D. Beneath its beauty, the film features a cross-species love story and a social message. Avatar is a must see for any movie fan.
+		</p>
+		<p>
+	    Best Quote:  Jake Sully (Sam Worthington) “I became a Marine for the hardship. Told myself that I can pass any test a man can pass. All I ever wanted was a single thing worth fighting for.”
+	</p>
+	</div>
+	<div class="col-lg-6 col-md-12">
+		<h2>Lunchbox</h2>
+		<img src="lunchbox.jpg">
+		<p>
+		 The film, set in Mumbai, revolves around a mistaken delivery by the Dabbawalas (lunchbox service) of Mumbai, which leads to a relationship between Saajan, a lonely widower close to retirement, and Ila, an unhappy housewife, as they start exchanging notes through the daily lunchbox.</p>
+		 <p>
+		 	 Best Quote:"You are young. You can dream. And for some time you let me into your dreams. And I want to thank you for that."
+		 	</p>
+		 </div>
+         <div class="col-lg-6 col-md-12">
+		<h2>Avenger</h2>
+		<img src="avenger.jpg" >
+		<p > 
+		Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. ... The film serves as a conclusion to the story of the MCU up to that point, ending the story arcs for several main characters.</p>
+		<p>
+			 Best Quote: "This Is The Fight Of Our Lives. We Are Going To Win. Whatever It Takes."</p>
+			</div>
+        <div class="col-lg-6 col-md-12">
+		<h2>Bahubali</h2>
+		<img src="Bahubali1.jpg" >
+		<p > Bahubali will be the first Indian film that will transcend regional boundaries and made in Telugu, Tamil and dubbed in Hindi, Malayalam, English, French and Japanese. Over 15,000 sketches were used over a span of 1 year to be used for the scenes shot for the film, During the pre-production stages.</p>
+		<p>
+		Best Quote:"A good king is always prepared to attack, but a great king is always prepared to defend."
+	</p>
+	   <p>
+	   	In battle, you are your best weapon.
+	   </p>
+	</div>
+	<div class="col-lg-6 col-md-12">
+		<h2>Top Gun</h2>
+		<img src="topgun.jpg" >
+		<p >He and his Radar Intercept Officer, Nick "Goose" Bradshaw (Edwards) are given the chance to train at the US Navy's Fighter Weapons School at Naval Air Station Miramar in San Diego, California.The film stars Tom Cruise, Kelly McGillis, Val Kilmer, Anthony Edwards, and Tom Skerritt. Cruise plays Lieutenant Pete "Maverick" Mitchell, a young naval aviator aboard the aircraft carrier USS Enterprise. He and his Radar Intercept Officer, Nick "Goose" Bradshaw (Edwards) are given the chance to train at the US Navy's Fighter Weapons School at Naval Air Station Miramar in San Diego, California.</p>
+		<p>
+			Best Quote:"Maverick, spotting Charlie for the first time:  "She's lost that loving feeling.""
+		</p>
+	</div>
+	<div class="col-lg-6 col-md-12">
+		<h2>Parasite</h2>
+		<img src="parasite.jpg" >
+		<p >Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.<br>
+			Parasite tells the story of a poverty-stricken family, the Kims, who cunningly place themselves in the service of the Parks, an obscenely wealthy household who have been unknowingly harboring a stranger in their basement for years</p>
+			<p>
+				Best Quote:
+				Ki-taek : They are rich but still nice.
+
+Chung-sook, Ki-taek's wife : They are nice because they are rich.</p>
 </div>
-</section>
-<div class="mainpoint highlight">You should only finish the paragraph when you’ve finished covering 
+<div class="col-lg-6 col-md-12">
+		<h2>Inception</h2>
+		<img src="inception.jpg" >
+		<p >Inception is a 2010 science fiction action film written and directed by Christopher Nolan, who also produced the film with his wife, Emma Thomas. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets.
+		After the 2002 completion of Insomnia, Nolan presented to Warner Bros. a written 80-page treatment for a horror film envisioning "dream stealers," based on lucid dreaming.Its official budget was US$160 million, split between Warner Bros and Legendary.</p>
+		<p>
+			Best Quote:
+			“You musn't be afraid to dream a little bigger, darling.”
+		</p>
+	</div>
+    <div class="col-lg-6 col-md-12">
+		<h2>Interstellar</h2>
+		<img src="itersteller.jpg" >
+		<p >Interstellar is a 2014 epic science fiction film directed, co-written and co-produced by Christopher Nolan. ... Set in a dystopian future where humanity is struggling to survive, the film follows a group of astronauts who travel through a wormhole near Saturn in search of a new home for mankind.Brothers Christopher and Jonathan Nolan wrote the screenplay, which had its origins in a script Jonathan developed in 2007. Christopher produced Interstellar with his wife, Emma Thomas, through their production company Syncopy, and with Lynda Obst through Lynda Obst Productions.</p>
+		<p>
+			Best Quote:"Prof. Brand: Do not go gentle into that good night. Rage, rage against the dying of the light.
+"</p>
 </div>
+ <div class="col-lg-6 col-md-12">
+		<h2>Swades</h2>
+		<img src="swades.jpeg" >
+		<p >Swades ( transl. "Motherland") is a 2004 Indian Hindi-language drama film written, produced and directed by Ashutosh Gowariker, based on the true life story of a Non-resident Indian (NRI) man who returns to his homeland.The film stars Shah Rukh Khan, Gayatri Joshi, Kishori Ballal in leading roles, with Daya Shankar Pandey, Rajesh Vivek, Lekh Tandon appearing in supporting role and Makrand Deshpande in a special appearance. The film was considered ahead of its time, and received widespread critical acclaim at its release. It is now considered a cult classic of Hindi cinema.</p>
+        <p>
+        	Best Quote: "Main nahi manta hamara desh duniya ka sabse mahaan desh hai...lekin yeh zaroor manta hoon...ki hum main kabliyat hai,taqat hai apne desh ko mahaan banane ki."
+        	</p>
+        	</div>
+        <div class="col-lg-6 col-md-12">
+		<h2>The Social Network</h2>
+		<img src="thesocialnetwork.jpg" >
+		<p> The Social Network is a 2010 American biographical drama film directed by David Fincher and written by Aaron Sorkin. Adapted from Ben Mezrich's 2009 book The Accidental Billionaires, it portrays the founding of social networking website Facebook and the resulting lawsuits. It stars Jesse Eisenberg as founder Mark Zuckerberg, along with Andrew Garfield as Eduardo Saverin, Justin Timberlake as Sean Parker, Armie Hammer as Cameron and Tyler Winklevoss, and Max Minghella as Divya Narendra. Neither Zuckerberg nor any other Facebook staff were involved with the project, although Saverin was a consultant for Mezrich's book.</p>
+		<p>
+		Best Quote:"Eduardo Saverin: Sorry! My Prada's at the cleaners! Along with my hoodie and my 'fuck you' flip-flops, you pretentious douchebag!"
+		</p>
+		</div>	 
+		<div class="header">
+         <p class="ending">
+         	Contact:
+         </p>
+         <p class="ending">
+         	Email:rishabhkumarrk641@gmail.com
+         </p>
+		</div>
 </body>
 </html>
